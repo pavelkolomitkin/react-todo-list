@@ -37,6 +37,11 @@ window.TodoList = React.createClass({
         this.setState(this.state);
     },
 
+    addNew: function (todo) {
+        this.state.todos.push(todo);
+        this.setState(this.state);
+    },
+
     render: function () {
         var self = this;
 
